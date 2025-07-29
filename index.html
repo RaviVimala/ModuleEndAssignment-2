@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form Validation</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+    <nav class="main-nav">
+        <div class="logo"> <img class="img-fluid" src="/images/signup.png" alt="..."></div>
+        <div class="links">
+            <ul>
+                <li>Home</li>
+                <li>Projects</li>
+                <li>forms</li>
+                <li>Libraries</li>
+            </ul>
+        </div>
+        <div class="sign-in"><button class="btn btn-link">Sign-in</button> <button class="register">Register Now</button></div>
+    </nav> <br><br><br><br>
+
+<div class="Container col-md-6 bg-light border-top border-secondary shadow-lg p-2 mb-6 bg-blue rounded " style="color: rgb(39, 67, 134);">
+
+<form name="RegForm" action="Success.html" method="post" onsubmit="return Validate()"> 
+<h1 style="color:rgb(105, 7, 92); ">Register your account</h1>
+
+<div class="mb-4 " >
+<label for="name" class="form-label">Name</label>
+<input type="text" id="Name" class="form-control"  placeholder="Enter your Name">
+<span id="name-error" class="error-message"></span>
+</div>
+
+<div class="mb-4">
+
+<label for="email" class="form-label" >Email address</label>
+<input type="email" id="Email" class="form-control"  placeholder="Enter your E-mail">
+<span id="email-error" class="error-message"></span>
+</div>
+
+<div class="mb-4">
+<label for="pwd" class="form-label">Password</label>
+<input type="password" id="PWD" class="form-control"  placeholder="Enter your Password" >
+<span id="pwd-error" class="error-message"></span></div>
+
+<div class="mb-4">
+<label for="name" class="form-label" >Conform Password</label>
+<input type="password" id="CPWD" class="form-control"  placeholder="Enter Confirm Password"  >
+<span id="cpwd-error" class="error-message"></span></div>
+
+
+<div class=" form-check mb-4 ">
+<input type="checkbox" id="agree"> i Agree with this Official Terms & Conditions.<a href="#">Terms & Privacy</a>
+<span id="agree-error" class="error-message"></span></div>
+
+<div class="col-12 gap-2 d-md-flex justify-content-md-end">
+<input class="btn btn-outline-primary" type="submit" value="submit" name="Submit" />
+<input class="btn btn-outline-primary"  type="reset" value="Reset" name="Reset" />
+</div>
+</div>
+
+<div class="container signin mb-2">
+<p>Already have an account? <a href="#">Sign in</a></p>
+</div>
+
+</form>
+</div> 
+
+
+
+</body>
+</html>

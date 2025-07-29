@@ -1,0 +1,44 @@
+.header h1{
+align-items: center;
+margin-left: 500px;
+margin-top:50px;
+}
+.container form{
+    width: 50%;
+    margin-top: 10px;
+    margin-left: 300px;
+}
+.main-nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 2%;
+    padding: 20px;
+    height: 20px;
+    
+}
+.sign-in{
+    padding-top: 30px;
+    margin-right: 50px;
+}
+.links{
+    padding-top: 30px;
+}
+ul{
+    color: blue;
+    font-size: x-large;
+    list-style-type: none;
+    display: flex;
+    gap: 70px;
+    margin: auto;
+}
+.img-fluid{
+   padding: 10 30px; 
+}
+.signin {
+  text-align: center;
+}
+
+.Container{
+    margin: 70px;
+    margin-left: 450px;
+}
